@@ -1,0 +1,141 @@
+body {
+   margin: 0px;
+    padding: 0px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+.header {
+   background-color:#7c5295;
+   padding-left: 25px;
+   padding: auto;
+}
+.logo{
+    height: 40px;
+    width: 84px;
+}
+.icon{
+    height:80px ; 
+    width: 80px; 
+    align-items: center;
+    padding-top: 25px;
+    padding-bottom: 15px;
+}
+
+
+.main-content {  
+    background: #B491C8;
+    padding:5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-field {
+    margin-bottom:10px;
+    display: flex;
+    flex-direction: column;
+  
+}
+
+label {
+    font-weight: bold;
+    display:inline-block;
+    width: 150px;
+    text-align: start;
+}
+
+.text-field input, .text-field select {
+    width: 251px;
+    height: 29px;
+    border-radius: 8px;
+    border-style: none;
+    filter: drop-shadow(0px 4px 4px rgba(73, 2, 73, 0.25));
+}
+
+.container {
+    display: block;
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 15px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.container label{
+    display: block;
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 12px;
+    cursor: pointer;
+   
+}
+.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 17px;
+    width:17px;
+    background-color:#7c5295;
+  }
+  
+  .container:hover input ~ .checkmark {
+    background-color: rgb(245, 245, 245);
+  }
+  
+  .container input:checked ~ .checkmark {
+    background-color: #d8cfd8;
+  }
+  .container input:checked ~ .checkmark:after {
+    display: block
+    
+  }
+  .container .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+
+  button {
+    background-color: #7c5295;
+    border-radius: 15px;
+    border: none;
+    color: white;
+    padding: 15px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+  }
+.link{
+    margin-top: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+    
+    .link a {
+    color: #926f9b;
+    text-decoration: none;
+ }
+    
+    .link a:hover {
+    color: #4e054e;
+    text-decoration: underline;
+ }
